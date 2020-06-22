@@ -1,1 +1,139 @@
+:root {
+    --color-black: rgb(0, 0, 0);
+    --color-grey: rgb(219, 216, 216);
+    --color-white: rgb(255, 255, 255);
+    --chakra-font: 'Chakra Petch', sans-serif;
+    --color-ligth-green: rgb(0, 204, 204);
+    --color-orange: rgb(255, 68, 34);
+    --color-yellow: rgb(255,255,0);
+}
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    width: 100%;
+    height: 25px;
+    color: var(--color-white);
+}
+
+.nav-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 90px;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+.nav-1 a{
+    color: var(--color-white);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    align-content: center;
+    padding: 0.5%;
+}
+
+.nav-1-ul-1,
+.nav-2-ul-1 {
+    width: 60%;
+    margin-left: 1%;
+}
+
+.nav-1-ul-2{
+    width: 20%;
+}
+
+nav li{
+    margin-right: 3%;
+    opacity: 0.5;
+}
+
+nav li:hover{
+    opacity: 1;
+}
+.nav-2-ul-1{
+    height: 50px;
+    width: 60%;
+    border-right: 1px solid var(--color-grey);
+}
+.nav-2-ul-1 a {
+    font-family: var(--chakra-font);
+    font-weight: 500;
+    color: var(--color-black);
+    font-size: 0.9rem;
+}
+
+.nav-2-ul-2{
+    width: 40%;
+    font-size: 0.7rem;
+}
+
+.nav-2-ul-2 li {
+    font-family: var(--chakra-font);
+    font-weight: 500;
+}
+
+.nav-2-ul-2 li:hover {
+    opacity: 0.5;
+}
+
+.countdown{
+    font-size: 17px;
+    color: var(--color-orange);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.nav-2-ul-2 button {
+    background-color: var(--color-ligth-green);
+    color: var(--color-white);
+    border: none;
+    outline: none;
+    height: 20px;
+    padding: 2%;
+    border-radius: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 1;
+}
+
+header p{
+    background-color: var(--color-yellow);
+    width: 100%;
+    padding: 1%;
+    font-size: 0.9rem;
+    margin-top: 0px;
+}
