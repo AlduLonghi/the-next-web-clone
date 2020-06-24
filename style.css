@@ -49,6 +49,14 @@ a {
   color: var(--color-white);
 }
 
+header p {
+  background-color: var(--color-yellow);
+  width: 100%;
+  padding: 0.5%;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
 .main-articles-footer p {
   margin-left: 0.8rem;
   color: var(--color-grey);
@@ -102,14 +110,6 @@ a {
 
 .nav-1 li:hover {
   opacity: 1;
-}
-
-header p {
-  background-color: var(--color-yellow);
-  width: 100%;
-  padding: 0.5%;
-  font-size: 0.9rem;
-  margin-top: 0;
 }
 
 .nav-2 {
