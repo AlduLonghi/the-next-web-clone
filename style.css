@@ -49,6 +49,17 @@ a {
   color: var(--color-white);
 }
 
+.main-articles-footer p {
+  margin-left: 0.8rem;
+  color: var(--color-grey);
+  font-size: 0.7rem;
+}
+
+.main-articles-footer a {
+  color: var(--color-grey);
+  font-size: 0.7rem;
+}
+
 .nav-1 a {
   color: var(--color-white);
 }
@@ -259,15 +270,16 @@ header p {
 .main-articles {
   display: grid;
   grid-template: 1fr / 4fr 2fr;
-  column-gap: 1rem;
+  column-gap: 0.5rem;
   height: 30rem;
+  min-height: 30rem;
   margin: 0.5rem;
 }
 
 .main-article-aside {
   display: grid;
   grid-template: repeat(2, 1fr) / 1fr;
-  row-gap: 1rem;
+  row-gap: 0.5rem;
 }
 
 .hero-article {
@@ -285,6 +297,12 @@ header p {
   width: 100%;
 }
 
+.main-articles-footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .hero-article-date {
   display: flex;
   justify-content: flex-end;
@@ -296,9 +314,44 @@ header p {
 
 .main-article-aside-sub-1 {
   background: linear-gradient(to bottom right, red, blue, black, green);
+  padding: 1rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .main-article-aside-sub-2 {
   background: linear-gradient(to bottom right, grey, purple, red);
   padding: 1rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.main-articles-footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@media all and (max-width: 1024px) {
+  .hero-article div:first-child {
+    visibility: hidden;
+  }
+
+  .hero-article {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/bmw-car-key-apple-carkey-digital-key-car-unloack-phone-ios-code-796x448.jpg") center center scroll no-repeat;
+    background-size: cover;
+  }
+
+  .hero-article h1 {
+    font-size: 2rem;
+  }
+
+  .main-article-aside h1,
+  .main-article-aside h2 {
+    font-size: 1rem;
+  }
 }
