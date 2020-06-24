@@ -57,6 +57,11 @@ header p {
   margin-top: 0;
 }
 
+.mid-article-head-content-1-body a {
+  color: grey;
+  font-size: 0.9rem;
+}
+
 .nav-2-ul-2-text span {
   font-family: var(--chakra-font);
   color: black;
@@ -72,8 +77,28 @@ header p {
   font-size: 0.8rem;
 }
 
+.mid-article-head-content-1-a1 span {
+  font-size: 1.2rem;
+  color: var(--color-black);
+  position: relative;
+  left: 6rem;
+  bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+  height: 1.6rem;
+}
+
 .latest-news-grid p > span {
   cursor: pointer;
+}
+
+.mid-article-head-content-1-body p {
+  font-size: 0.8rem;
+}
+
+.mid-article-head-content-1-a1 p {
+  color: grey;
+  font-size: 0.6rem;
 }
 
 .main-articles-footer p {
@@ -101,6 +126,10 @@ header p {
   font-size: 0.8rem;
   align-content: center;
   padding: 0.5%;
+}
+
+.mid-article-head-title li {
+  margin-right: 1rem;
 }
 
 .nav-1-ul-1 {
@@ -167,6 +196,10 @@ header p {
   min-width: 10%;
   text-align: center;
   margin-top: 1rem;
+}
+
+.mid-article-head-title a {
+  color: var(--color-orange);
 }
 
 .nav-2-ul-1 a:hover {
@@ -536,19 +569,11 @@ header p {
   width: 50%;
 }
 
-.mid-article-head-title a {
-  color: var(--color-orange);
-}
-
 .mid-article-head-title ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 1rem;
-}
-
-.mid-article-head-title li {
-  margin-right: 1rem;
 }
 
 .mid-article-head-title li:not(:first-child) {
@@ -597,22 +622,6 @@ header p {
   font-size: 0.7rem;
 }
 
-.mid-article-head-content-1-a1 span {
-  font-size: 1.2rem;
-  color: var(--color-black);
-  position: relative;
-  left: 6rem;
-  bottom: 1rem;
-  text-transform: uppercase;
-  line-height: 1rem;
-  height: 1.6rem;
-}
-
-.mid-article-head-content-1-a1 p {
-  color: grey;
-  font-size: 0.6rem;
-}
-
 .mid-article-head-content-1-body {
   display: flex;
   flex-direction: column;
@@ -621,17 +630,12 @@ header p {
   background-color: rgb(255, 250, 248);
 }
 
-.mid-article-head-content-1-body a {
-  color: grey;
-  font-size: 0.9rem;
-}
-
-.mid-article-head-content-1-body p {
-  font-size: 0.8rem;
-}
-
 .mid-article-head-content-1-body a:last-child {
   border-top: 1px solid rgb(255, 205, 194);
+}
+
+.mid-article-head-content-1 a:not(:last-child):hover {
+  color: var(--color-black);
 }
 
 @media all and (max-width: 1024px) {
