@@ -18,7 +18,7 @@
 
 body {
   height: 100%;
-  min-width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background: var(--color-white) center center fixed;
   background-size: cover;
@@ -356,5 +356,30 @@ header p {
   .main-article-aside h1,
   .main-article-aside h2 {
     font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main-articles {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    row-gap: 0.5rem;
+    height: 15rem;
+  }
+
+  .main-articles h1 {
+    font-size: 1rem;
+  }
+
+  .main-article-head-container {
+    display: none;
+  }
+
+  .hero-article {
+    display: block;
+  }
+
+  .main-article-aside {
+    height: 30rem;
   }
 }
