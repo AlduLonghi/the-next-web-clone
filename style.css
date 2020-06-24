@@ -637,6 +637,21 @@ header p {
 @media all and (max-width: 1024px) {
   .mid-article-head-container {
     width: 98%;
+    display: grid;
+    grid-template: 4rem 3fr / 1fr;
+  }
+
+  .mid-article-head-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mid-article-head-title ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 1rem;
   }
 
   .last-child {
@@ -655,7 +670,7 @@ header p {
   .mid-article-head-container {
     width: 98%;
     display: grid;
-    grid-template: 1fr 3fr / 1fr;
+    grid-template: 9rem 3fr / 1fr;
   }
 
   .mid-article-head-title {
@@ -672,8 +687,12 @@ header p {
   }
 
   .mid-article-head-title li {
-    border-right: none;
-    background-color: hotpink;
+    margin-top: 1rem;
+  }
+
+  .mid-article-head-title li:not(:first-child) {
+    border-left: none;
+    padding-left: 0;
   }
 
   .mid-article-head-content {
