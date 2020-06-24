@@ -114,15 +114,16 @@ header p {
 }
 
 .nav-2-ul-1 {
-  width: 75%;
+  width: 55%;
   align-content: center;
   margin-left: 1rem;
 }
 
 .nav-2-ul-2 {
-  width: 25%;
+  width: 45%;
   height: 3rem;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 
 .nav-2-ul-1 a {
@@ -158,10 +159,6 @@ header p {
 
 .nav-2-ul-2-text span:nth-child(2) {
   font-size: 0.7rem;
-}
-
-.nav-2-ul-2:last-child {
-  margin-bottom: 3rem;
 }
 
 .nav-2-ul-2 button {
@@ -255,3 +252,4 @@ header p {
   width: 15rem;
   height: 10rem;
 }
+
