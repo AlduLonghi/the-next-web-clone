@@ -264,7 +264,7 @@ header p {
   margin: 0.5rem;
 }
 
-.main-article-aside{
+.main-article-aside {
   display: grid;
   grid-template: repeat(2, 1fr) / 1fr;
   row-gap: 1rem;
@@ -297,6 +297,7 @@ header p {
 .main-article-aside-sub-1 {
   background: linear-gradient(to bottom right, red, blue, black, green);
 }
+
 .main-article-aside-sub-2 {
   background: linear-gradient(to bottom right, grey, purple, red);
   padding: 1rem;
