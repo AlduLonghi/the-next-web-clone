@@ -24,19 +24,42 @@ body {
   background-size: cover;
 }
 
-@media all and (max-width: 1114px) {
-  .main-header-content {
-    display: grid;
-    grid-template-columns: 1fr 13fr;
-  }
-}
-
 li {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25rem;
+}
+
+footer i {
+  width: 100%;
+  height: 100%;
+}
+
+footer a {
+  color: var(--color-white);
+  height: 1rem;
+}
+
+.footer-media li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(75, 73, 73, 0.5);
+}
+
+.footer-section-2 div {
+  display: flex;
 }
 
 .uppercase {
@@ -308,55 +331,6 @@ header p {
   margin-left: 0.8rem;
 }
 
-@media all and (max-width: 1114px) {
-  .gradient-logo img {
-    display: block;
-  }
-
-  .nav-2-ul-2-text {
-    display: none;
-  }
-
-  .countdown {
-    display: none;
-  }
-
-  .nav-2-ul-2 button {
-    display: none;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .hamburger-menu {
-    display: block;
-  }
-
-  .nav-1 {
-    display: none;
-  }
-
-  .nav-2 ul:first-child {
-    display: none;
-  }
-
-  .nav-2-ul-2 {
-    width: 100%;
-    height: 3rem;
-  }
-
-  .nav-2-ul-2 li:last-child {
-    display: none;
-  }
-
-  .main-header-content {
-    height: 3rem;
-  }
-
-  .gradient-logo img {
-    height: 3rem;
-  }
-}
-
 .main-articles img {
   width: 100%;
   height: 10rem;
@@ -437,51 +411,6 @@ header p {
   margin-top: 0.5rem;
 }
 
-@media all and (max-width: 1024px) {
-  .hero-article div:first-child {
-    visibility: hidden;
-  }
-
-  .hero-article {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/bmw-car-key-apple-carkey-digital-key-car-unloack-phone-ios-code-796x448.jpg") center center scroll no-repeat;
-    background-size: cover;
-  }
-
-  .hero-article h1 {
-    font-size: 2rem;
-  }
-
-  .main-article-aside h1,
-  .main-article-aside h2 {
-    font-size: 1rem;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .main-articles {
-    display: grid;
-    grid-template: repeat(2, 1fr) / 1fr;
-    row-gap: 0.5rem;
-    height: 15rem;
-  }
-
-  .main-articles h1 {
-    font-size: 1rem;
-  }
-
-  .main-article-head-container {
-    display: none;
-  }
-
-  .hero-article {
-    display: block;
-  }
-
-  .main-article-aside {
-    height: 30rem;
-  }
-}
-
 .latest-news {
   display: flex;
   flex-direction: column;
@@ -527,65 +456,6 @@ header p {
 
 .latest-news h2:hover {
   color: var(--color-black);
-}
-
-@media all and (max-width: 1024px) {
-  .grid-header {
-    width: 90%;
-  }
-
-  .latest-news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 90%;
-  }
-
-  .latest-news-grid img {
-    height: 11rem;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .latest-news {
-    width: 100%;
-    margin-top: 18rem;
-  }
-
-  .grid-header {
-    width: 95%;
-  }
-
-  .latest-news-grid {
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: 1fr;
-    width: 95%;
-    grid-row-gap: 0.5rem;
-  }
-
-  .latest-news-grid h4 {
-    margin-top: 0;
-  }
-
-  .latest-news-grid p span:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .latest-news-grid img {
-    width: 100%;
-    height: 4.3rem;
-  }
-
-  .latest-news-grid div {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-column-gap: 0.8rem;
-  }
-
-  .latest-news-grid div > div {
-    display: inline;
-  }
 }
 
 .mid-article-container {
@@ -684,77 +554,6 @@ header p {
 
 .mid-article-head-content-1 a:not(:last-child):hover {
   color: var(--color-black);
-}
-
-@media all and (max-width: 1024px) {
-  .mid-article-head-container {
-    width: 95%;
-    display: grid;
-    grid-template: 4rem 3fr / 1fr;
-    margin: 4rem auto;
-  }
-
-  .mid-article-head-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .mid-article-head-title ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 1rem;
-  }
-
-  .last-child {
-    display: none;
-  }
-
-  .mid-article-head-content {
-    width: 100%;
-    display: grid;
-    grid-template: 1fr / repeat(3, 1fr);
-    column-gap: 1rem;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .mid-article-head-container {
-    width: 95%;
-    display: grid;
-    grid-template: 9rem 3fr / 1fr;
-    margin: 4rem auto;
-  }
-
-  .mid-article-head-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .mid-article-head-title ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1rem;
-  }
-
-  .mid-article-head-title li {
-    margin-top: 1rem;
-  }
-
-  .mid-article-head-title li:not(:first-child) {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .mid-article-head-content {
-    width: 100%;
-    display: grid;
-    grid-template: repeat(3, 1fr) / 1fr;
-    row-gap: 1rem;
-  }
 }
 
 .article-content-2-grid {
@@ -874,57 +673,17 @@ header p {
   margin-left: 0.75rem;
 }
 
-@media all and (max-width: 1024px) {
-  .article-content-2-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 95%;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .article-content-2-container {
-    display: block;
-  }
-
-  .article-content-2 {
-    margin-top: 2rem;
-  }
-
-  .article-content-2-pic {
-    height: 30rem;
-  }
-}
-
-.latest-deals-grid img {
-  width: 100%;
-  height: 12rem;
-  cursor: pointer;
-}
-
-.latest-deals-grid-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media all and (max-width: 768px) {
-  .latest-deals-grid img {
-    width: 100%;
-    height: 4.5rem;
-    cursor: pointer;
-  }
-}
-
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  width: 100%;
 }
 
-.footer-section-1, .footer-section-2{
+.footer-section-1,
+.footer-section-2 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -937,22 +696,6 @@ footer {
   height: 10rem;
 }
 
-.footer-section-2 {
-  background-color: var(--color-black);
-  height: 6rem;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-evenly;
-  width: 25rem;
-}
-
-footer i {
-  width: 100%;
-  height: 100%;
-}
-
 .footer-navbar {
   width: 20rem;
 }
@@ -961,22 +704,7 @@ footer ul:first-child {
   margin-bottom: 2rem;
 }
 
-footer a {
-  color: var(--color-white);
-  height: 1rem;
-}
-
-.footer-media li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: rgba(75, 73, 73, 0.5);
-}
-
-.footer-navbar *{
+.footer-navbar * {
   font-family: var(--chakra-font);
   font-size: 0.8rem;
   opacity: 0.8;
@@ -987,6 +715,8 @@ footer a {
   flex-direction: row;
   color: var(--color-white);
   font-size: 0.65rem;
+  background-color: var(--color-black);
+  height: 6rem;
 }
 
 .footer-logo {
@@ -995,32 +725,130 @@ footer a {
   margin: 0 0.3rem;
 }
 
-.footer-section-2 div {
-  display: flex;
-}
-
 .heart-logo {
   width: 0.4rem;
   height: 0.4rem;
   margin: 0 0.3rem;
 }
 
+@media all and (max-width: 1114px) {
+  header p {
+    text-align: center;
+  }
+
+  .main-header-content {
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+  }
+
+  .gradient-logo img {
+    display: block;
+  }
+
+  .nav-2-ul-2-text {
+    display: none;
+  }
+
+  .countdown {
+    display: none;
+  }
+
+  .nav-2-ul-2 button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  header p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .button-li {
+    display: none;
+  }
+
+  .hero-article div:first-child {
+    visibility: hidden;
+  }
+
+  .hero-article {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/bmw-car-key-apple-carkey-digital-key-car-unloack-phone-ios-code-796x448.jpg") center center scroll no-repeat;
+    background-size: cover;
+  }
+
+  .hero-article h1 {
+    font-size: 2rem;
+  }
+
+  .main-article-aside h1,
+  .main-article-aside h2 {
+    font-size: 1rem;
+  }
+
+  .grid-header {
+    width: 90%;
+  }
+
+  .latest-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+  }
+
+  .latest-news-grid img {
+    height: 11rem;
+  }
+
+  .latest-deals-grid div img {
+    height: 11rem;
+  }
+
+  .mid-article-head-container {
+    width: 90%;
+    display: grid;
+    grid-template: 4rem 3fr / 1fr;
+    margin: 4rem auto;
+  }
+
+  .mid-article-head-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mid-article-head-title ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 1rem;
+  }
+
+  .last-child {
+    display: none;
+  }
+
+  .mid-article-head-content {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+
+  .article-content-2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+
+  .article-content-2-grid {
+    margin-top: 2rem;
+  }
+}
+
 @media all and (max-width: 768px) {
-  footer ul {
-    width: 20rem;
-  }
-
-  .footer-media li {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .footer-navbar {
-    width: 15rem;
-  }
-
-  .footer-navbar * {
-    font-size: 0.6rem;
+  .hamburger-menu {
+    display: block;
   }
 
   .footer-section-2 div {
@@ -1030,5 +858,177 @@ footer a {
     line-height: 1.3rem;
   }
 
+  footer ul {
+    width: 20rem;
+  }
+
+  .mid-article-head-title ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1rem;
+  }
+
+  .mid-article-head-title li {
+    margin-top: 1rem;
+  }
+
+  .footer-media li {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .nav-1 {
+    display: none;
+  }
+
+  .nav-2 ul:first-child {
+    display: none;
+  }
+
+  .nav-2-ul-2 {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .nav-2-ul-2 li:last-child {
+    display: none;
+  }
+
+  .main-header-content {
+    height: 3rem;
+  }
+
+  .gradient-logo img {
+    height: 3rem;
+  }
+
+  .main-articles {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    row-gap: 0.5rem;
+    height: 15rem;
+  }
+
+  .main-articles h1 {
+    font-size: 1rem;
+  }
+
+  .main-article-head-container {
+    display: none;
+  }
+
+  .hero-article {
+    display: block;
+  }
+
+  .main-article-aside {
+    height: 30rem;
+  }
+
+  .latest-news {
+    width: 100%;
+    margin-top: 20rem;
+  }
+
+  .latest-deals-2 {
+    margin-top: 4rem;
+  }
+
+  .grid-header {
+    width: 95%;
+  }
+
+  .latest-news-grid {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+    width: 95%;
+    grid-row-gap: 0.5rem;
+  }
+
+  .latest-news-grid h4 {
+    margin-top: 0;
+  }
+
+  .latest-news-grid p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .latest-news-grid img {
+    width: 100%;
+    height: 4.3rem;
+  }
+
+  .latest-news-grid div {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-column-gap: 0.8rem;
+  }
+
+  .latest-news-grid div > div {
+    display: inline;
+  }
+
+  .mid-article-head-container {
+    width: 95%;
+    display: grid;
+    grid-template: 9rem 3fr / 1fr;
+    margin: 3rem auto;
+  }
+
+  .mid-article-head-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mid-article-head-title li:not(:first-child) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .mid-article-head-content {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    row-gap: 1rem;
+  }
+
+  .article-content-2-container {
+    display: block;
+  }
+
+  .article-content-2-grid {
+    margin-top: 0;
+  }
+
+  .article-content-2 {
+    margin-top: 1rem;
+  }
+
+  .article-content-2-pic {
+    height: 30rem;
+  }
+
+  .latest-deals-grid-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .latest-deals-grid div img {
+    width: 100%;
+    height: 4.5rem;
+    cursor: pointer;
+  }
+
+  .footer-navbar {
+    width: 15rem;
+  }
+
+  .footer-navbar * {
+    font-size: 0.6rem;
   }
 }
