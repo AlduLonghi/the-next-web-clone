@@ -60,12 +60,6 @@ header {
   z-index: 10;
 }
 
-@media all and (max-height: 19vw) {
-  .nav-1 {
-    display: none;
-  }
-}
-
 header p {
   background-color: var(--color-yellow);
   width: 100%;
@@ -917,7 +911,124 @@ header p {
 @media all and (max-width: 768px) {
   .latest-deals-grid img {
     width: 100%;
-    height: 60%;
+    height: 4.5rem;
     cursor: pointer;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.footer-section-1, .footer-section-2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section-1 {
+  background-color: rgb(19, 19, 19, 0.98);
+  height: 10rem;
+}
+
+.footer-section-2 {
+  background-color: var(--color-black);
+  height: 6rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25rem;
+}
+
+footer i {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-navbar {
+  width: 20rem;
+}
+
+footer ul:first-child {
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: var(--color-white);
+  height: 1rem;
+}
+
+.footer-media li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(75, 73, 73, 0.5);
+}
+
+.footer-navbar *{
+  font-family: var(--chakra-font);
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.footer-section-2 {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-white);
+  font-size: 0.65rem;
+}
+
+.footer-logo {
+  width: 2rem;
+  height: 0.5rem;
+  margin: 0 0.3rem;
+}
+
+.footer-section-2 div {
+  display: flex;
+}
+
+.heart-logo {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.3rem;
+}
+
+@media all and (max-width: 768px) {
+  footer ul {
+    width: 20rem;
+  }
+
+  .footer-media li {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer-navbar {
+    width: 15rem;
+  }
+
+  .footer-navbar * {
+    font-size: 0.6rem;
+  }
+
+  .footer-section-2 div {
+    font-size: 0.8rem;
+    width: 15rem;
+    text-align: center;
+    line-height: 1.3rem;
+  }
+
   }
 }
