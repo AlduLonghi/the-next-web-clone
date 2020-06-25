@@ -109,6 +109,10 @@ header p {
   padding: 0.6rem 0;
 }
 
+.latest-deals-grid-header a {
+  color: var(--color-orange);
+}
+
 .article-content-2 ul a {
   color: var(--color-black);
   opacity: 0.5;
@@ -666,6 +670,10 @@ header p {
   border-top: 1px solid rgb(255, 205, 194);
 }
 
+.latest-deals-grid-header a:hover {
+  color: var(--color-black);
+}
+
 .mid-article-head-content-1 a:not(:last-child):hover {
   color: var(--color-black);
 }
@@ -886,8 +894,16 @@ header p {
   cursor: pointer;
 }
 
-.ribbon {
-  background-color: var(--color-yellow);
-  height: 3rem;
-  width: 100%;
+.latest-deals-grid-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .latest-deals-grid img {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+  }
 }
