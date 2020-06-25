@@ -885,3 +885,9 @@ header p {
   height: 12rem;
   cursor: pointer;
 }
+
+.ribbon {
+  background-color: var(--color-yellow);
+  height: 3rem;
+  width: 100%;
+}
