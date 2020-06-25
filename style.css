@@ -879,3 +879,9 @@ header p {
     height: 30rem;
   }
 }
+
+.latest-deals-grid img {
+  width: 100%;
+  height: 12rem;
+  cursor: pointer;
+}
