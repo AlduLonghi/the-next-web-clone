@@ -91,7 +91,13 @@ header p {
   margin-top: 0;
 }
 
-header p a {
+.latest-news h2 {
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+}
+
+header p a,
+.latest-news-grid a {
   color: var(--color-black);
 }
 
@@ -107,7 +113,42 @@ header p a {
   font-size: 0.8rem;
 }
 
-.mid-article-head-title a {
+.main-articles-footer a {
+  color: var(--color-grey);
+  font-size: 0.7rem;
+}
+
+.nav-1 a {
+  color: var(--color-white);
+}
+
+.mid-article-head-content-1-body a {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.article-content-2 ul a {
+  color: var(--color-black);
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.nav-2-ul-1 a:hover {
+  opacity: 1;
+}
+
+.mid-article-head-content-1-body a:last-child {
+  border-top: 1px solid rgb(255, 205, 194);
+}
+
+.latest-news h2:hover,
+.mid-article-head-title a:hover,
+.latest-deals-grid-header a:hover,
+.mid-article-head-content-1 a:not(:last-child):hover {
+  color: var(--color-black);
+}
+
+.text-orange {
   color: var(--color-orange);
 }
 
@@ -120,40 +161,12 @@ header p a {
   margin-right: 1rem;
 }
 
-.main-articles-footer a {
-  color: var(--color-grey);
-  font-size: 0.7rem;
-}
-
-.nav-1 a {
-  color: var(--color-white);
-}
-
-.latest-news-grid a {
-  color: var(--color-black);
-}
-
-.mid-article-head-content-1-body a {
-  color: grey;
-  font-size: 0.9rem;
-}
-
 .article-content-2 ul li {
   list-style: disc;
   color: var(--color-orange);
   margin-left: 0.2rem;
   border-bottom: 1px solid var(--color-light-grey);
   padding: 0.6rem 0;
-}
-
-.latest-deals-grid-header a {
-  color: var(--color-orange);
-}
-
-.article-content-2 ul a {
-  color: var(--color-black);
-  opacity: 0.5;
-  font-size: 0.8rem;
 }
 
 .ac2-secondary-article p {
@@ -274,10 +287,6 @@ header p a {
   height: 3rem;
   justify-content: flex-end;
   margin-bottom: 0;
-}
-
-.nav-2-ul-1 a:hover {
-  opacity: 1;
 }
 
 .nav-2-ul-2 li:not(:last-child) {
@@ -428,7 +437,9 @@ header p a {
 }
 
 .grid-header {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 63rem;
 }
 
@@ -454,15 +465,6 @@ header p a {
 .latest-news-grid h4:hover {
   text-decoration: underline;
   color: var(--color-orange);
-}
-
-.latest-news h2 {
-  color: var(--color-orange);
-  margin-bottom: 1rem;
-}
-
-.latest-news h2:hover {
-  color: var(--color-black);
 }
 
 .mid-article-container {
@@ -500,10 +502,6 @@ header p a {
 .mid-article-head-title li:not(:first-child) {
   border-left: 1px solid var(--color-orange);
   padding-left: 1rem;
-}
-
-.mid-article-head-title a:hover {
-  color: var(--color-black);
 }
 
 .mid-article-head-content {
@@ -551,18 +549,6 @@ header p a {
   background-color: rgb(255, 250, 248);
 }
 
-.mid-article-head-content-1-body a:last-child {
-  border-top: 1px solid rgb(255, 205, 194);
-}
-
-.latest-deals-grid-header a:hover {
-  color: var(--color-black);
-}
-
-.mid-article-head-content-1 a:not(:last-child):hover {
-  color: var(--color-black);
-}
-
 .article-content-2-grid {
   display: flex;
   justify-content: center;
@@ -606,48 +592,37 @@ header p a {
 
 .ac2p-1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-1.png") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-2 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-2.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-3 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-3.png") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-4 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-4.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-5 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-5.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-6 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-6.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-7 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-7.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .ac2p-8 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/article-8.jpg") no-repeat;
+}
+
+.cover-center {
   background-position: center;
   background-size: cover;
 }
@@ -771,10 +746,6 @@ footer ul:first-child {
     padding-bottom: 1rem;
   }
 
-  .button-li {
-    display: none;
-  }
-
   .hero-article div:first-child {
     visibility: hidden;
   }
@@ -803,10 +774,7 @@ footer ul:first-child {
     width: 90%;
   }
 
-  .latest-news-grid img {
-    height: 11rem;
-  }
-
+  .latest-news-grid img,
   .latest-deals-grid div img {
     height: 11rem;
   }
@@ -831,7 +799,8 @@ footer ul:first-child {
     height: 1rem;
   }
 
-  .last-child {
+  .last-child,
+  .button-li {
     display: none;
   }
 
@@ -854,7 +823,8 @@ footer ul:first-child {
 }
 
 @media all and (max-width: 768px) {
-  .hamburger-menu {
+  .hamburger-menu,
+  .hero-article {
     display: block;
   }
 
@@ -885,10 +855,8 @@ footer ul:first-child {
     height: 2rem;
   }
 
-  .nav-1 {
-    display: none;
-  }
-
+  .nav-1,
+  .nav-2-ul-2 li:last-child,
   .nav-2 ul:first-child {
     display: none;
   }
@@ -896,10 +864,6 @@ footer ul:first-child {
   .nav-2-ul-2 {
     width: 100%;
     height: 3rem;
-  }
-
-  .nav-2-ul-2 li:last-child {
-    display: none;
   }
 
   .main-header-content {
@@ -926,10 +890,6 @@ footer ul:first-child {
     height: 4rem;
   }
 
-  .hero-article {
-    display: block;
-  }
-
   .main-article-aside {
     height: 20rem;
   }
@@ -941,10 +901,6 @@ footer ul:first-child {
 
   .latest-deals-2 {
     margin-top: 4rem;
-  }
-
-  .grid-header {
-    width: 95%;
   }
 
   .latest-news-grid {
@@ -1025,6 +981,13 @@ footer ul:first-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .grid-header {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
   }
 
   .latest-deals-grid div img {
