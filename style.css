@@ -98,6 +98,8 @@ header p {
   min-width: 10%;
   text-align: center;
   margin-top: 1rem;
+  text-transform: uppercase;
+  font-family: var(--chakra-font);
 }
 
 .mid-article-head-title a {
@@ -332,7 +334,7 @@ header p {
 }
 
 .main-articles img {
-  width: 100%;
+  width: 200%;
   height: 10rem;
 }
 
@@ -916,6 +918,7 @@ footer ul:first-child {
 
   .main-article-head-container {
     display: none;
+    height: 4rem;
   }
 
   .hero-article {
@@ -923,12 +926,12 @@ footer ul:first-child {
   }
 
   .main-article-aside {
-    height: 30rem;
+    height: 20rem;
   }
 
   .latest-news {
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 4rem;
   }
 
   .latest-deals-2 {
@@ -957,8 +960,8 @@ footer ul:first-child {
   }
 
   .latest-news-grid img {
-    width: 100%;
-    height: 4.3rem;
+    width: 75px;
+    height: 75px;
   }
 
   .latest-news-grid div {
@@ -994,6 +997,7 @@ footer ul:first-child {
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
     row-gap: 1rem;
+    margin-top: 2rem;
   }
 
   .article-content-2-container {
@@ -1009,7 +1013,7 @@ footer ul:first-child {
   }
 
   .article-content-2-pic {
-    height: 30rem;
+    height: 15rem;
   }
 
   .latest-deals-grid-header {
@@ -1019,8 +1023,8 @@ footer ul:first-child {
   }
 
   .latest-deals-grid div img {
-    width: 100%;
-    height: 4.5rem;
+    width: 75px;
+    height: 75px;
     cursor: pointer;
   }
 
