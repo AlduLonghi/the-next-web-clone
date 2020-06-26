@@ -91,15 +91,20 @@ header p {
   margin-top: 0;
 }
 
+header p a {
+  color: var(--color-black);
+}
+
 .nav-2-ul-1 a {
   display: block;
   color: var(--color-black);
   opacity: 0.5;
-  min-width: 10%;
+  min-width: 5%;
   text-align: center;
   margin-top: 1rem;
   text-transform: uppercase;
   font-family: var(--chakra-font);
+  font-size: 0.8rem;
 }
 
 .mid-article-head-title a {
@@ -334,7 +339,7 @@ header p {
 }
 
 .main-articles img {
-  width: 200%;
+  width: 150%;
   height: 10rem;
 }
 
